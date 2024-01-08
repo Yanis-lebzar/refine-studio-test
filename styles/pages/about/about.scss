@@ -1,0 +1,70 @@
+.about {
+    @extend %cover;
+    @extend %center;
+    background-color: #F6FBFF;
+
+    .navigation--active {
+        background-color: white;
+        color: $bleu-de-france;
+    }
+}
+
+.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.about__title {
+    opacity: 0;
+    color: $bleu-de-france;
+    @extend %title-96;
+    text-align: center;
+    visibility: hidden;
+}
+
+.about__text__media {
+    opacity: 0;
+
+    width: 100.219rem;
+    height: 22rem;
+    overflow: hidden;
+    position: absolute;
+    top: 5.4rem;
+    visibility: visible;
+
+    @include media('<phone') {
+        transform: scale(0.7);
+        top: -2.4rem;
+
+        // margin-top: 8rem;
+    }
+}
+
+.about__text__media__img {
+    @extend %cover;
+    object-fit: cover;
+}
+
+.about__media {
+    opacity: 0;
+    margin-top: 13.7rem;
+    width: 40.7rem;
+    height: 12rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 6rem;
+    cursor: pointer;
+
+    @include media('<phone') {
+
+        margin-top: 8rem;
+    }
+}
+
+.about__media__img {
+    @extend %cover;
+    object-fit: cover;
+}

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: $font-branch;
+    src: url('../fonts/branch-regular.woff') format('woff'), url('../fonts/branch-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font-poppins;
+    src: url('../fonts/poppins-semibold.woff') format('woff') url('../fonts/poppins-semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font-poppins;
+    src: url('../fonts/poppins-regular.woff') format('woff'), url('../fonts/poppins-regular.woff2') format('woff2');
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font-poppins;
+    src: url('../fonts/poppins-light.woff') format('woff'), url('../fonts/poppins-light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font-santiago;
+    src: url('../fonts/santiago.woff') format('woff'), url('../fonts/santiago.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font-sarala;
+    src: url('../fonts/sarala-regular.woff') format('woff'), url('../fonts/sarala-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

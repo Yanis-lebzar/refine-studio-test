@@ -1,0 +1,17 @@
+.fullscreenMenu
+  //- include ./navigation
+  .fullscreenMenu__wrapper
+    ul.fullscreenMenu__list
+      .column
+        each item, index in navigation.data.list
+          if index < 3
+            li.fullscreenMenu__list__item
+              a.fullscreenMenu__list__link(data-animation="link" href=`/${item.text == "Accueil" ? '' : item.link.slug}`)
+                span=item.text
+      .column
+        each item, index in navigation.data.list
+          if index >= 3
+            li.fullscreenMenu__list__item
+              a.fullscreenMenu__list__link(data-animation="link" href=`/${item.link.slug}`)
+                span=item.text
+  include ./footer

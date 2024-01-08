@@ -1,0 +1,18 @@
+extends ../template.pug 
+
+block variables 
+  - var template = 'about'
+
+block content   
+  .about(data-background="#B2B8C3" data-color="#2F80ED")
+    //- include ../partials/navigation
+    .about__wrapper
+      p.about__title!=about.data.title.replace(/\n/g,'<br>')
+
+      figure.about__text__media
+        img.about__text__media__img(data-src=about.data.textimage.url data-srcMobile=about.data.textimage.mobile.url alt=about.data.textimage.alt)
+
+      figure.about__media
+        img.about__media__img(data-src=about.data.image.url alt=about.data.image.alt)
+
+    include ../partials/footer

@@ -1,0 +1,16 @@
+nav.navigation(class=``)
+  .navigation__wrapper
+    .navigation__icon__wrapper
+      a.navigation__icon__link(href="/")
+        span=navigation.data.text
+
+    .navigation__list__wrapper
+      ul.navigation__list
+        each item in navigation.data.list
+          if item.text !== "Accueil"
+            li.navigation__list__item
+              a.navigation__list__link(href=`/${item.link.slug}` )
+                span=item.text
+    .navigation__hamburger
+      .navigation__hamburger__lines(id='burgerLines')
+

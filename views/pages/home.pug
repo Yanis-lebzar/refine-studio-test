@@ -1,0 +1,102 @@
+extends ../template.pug 
+
+block variables 
+  - var template = 'home'
+
+block content   
+  .home
+    .home__wrapper
+      section.home__hero
+        .home__hero__wrapper
+          .home__hero__wrapper__background__circle
+            figure.home__hero__wrapper__background__circle__media
+              <svg width="516" height="516" viewBox="0 0 516 516" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="258" cy="258" r="227" fill="#0A0A0A" stroke="url(#paint0_linear_473_23)" stroke-width="6"/>
+                <g filter="url(#filter0_f_473_23)">
+                <circle cx="258" cy="258" r="230" fill="#0A0A0A"/>
+                <circle cx="258" cy="258" r="227" stroke="url(#paint1_linear_473_23)" stroke-width="6"/>
+                </g>
+                <defs>
+                <filter id="filter0_f_473_23" x="0" y="0" width="516" height="516" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="14" result="effect1_foregroundBlur_473_23"/>
+                </filter>
+                <linearGradient id="paint0_linear_473_23" x1="28" y1="28" x2="488" y2="488" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#E2E2E2"/>
+                <stop offset="1" stop-color="#E2E2E2" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_473_23" x1="28" y1="28" x2="488" y2="488" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#E2E2E2"/>
+                <stop offset="1" stop-color="#E2E2E2" stop-opacity="0"/>
+                </linearGradient>
+                </defs>
+              </svg>
+
+          .home__hero__wrapper__content
+            .home__hero__text__wrapper
+              //- .gradient-overlay
+              .home__hero__text
+                span="I'm Yanis,"
+              .home__hero__text__middle
+                .home__hero__text__middle__circle__wrapper
+                  .home__hero__text__middle__circle
+                .home__hero__text
+                  span="Creative"
+              .home__hero__text
+                span="Developer"
+            .home__hero__text__cta__wrapper
+              .home__hero__text__description__wrapper
+                p.home__hero__text__description="With a passion for aesthetics and an eye for innovation, Yanis breathes life into pixels, creating websites that captivate and elevate user experiences."
+              .home__hero__text__cta__link__wrapper
+                a.home__hero__text__cta__link(href="/")
+                  p.home__hero__text__cta__link__text="GET IN TOUCH"
+                  figure.home__hero__text__cta__link__icon
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.548332 17.8087C0.711811 17.9722 0.933537 18.064 1.16473 18.064C1.39593 18.064 1.61765 17.9722 1.78113 17.8087L16.3195 3.27027L16.3183 11.0283C16.3183 11.2598 16.4103 11.4818 16.574 11.6455C16.7376 11.8091 16.9596 11.9011 17.1911 11.9011C17.4226 11.9011 17.6446 11.8091 17.8083 11.6455C17.972 11.4818 18.064 11.2598 18.064 11.0283L18.064 1.16588C18.0641 1.05122 18.0416 0.937655 17.9978 0.831694C17.954 0.725733 17.8897 0.629456 17.8086 0.548378C17.7276 0.4673 17.6313 0.403015 17.5253 0.359203C17.4194 0.315391 17.3058 0.292913 17.1911 0.293058L7.32873 0.293057C7.21411 0.293057 7.10061 0.315634 6.99472 0.359497C6.88882 0.40336 6.7926 0.467652 6.71155 0.548701C6.54787 0.712387 6.45591 0.934393 6.45591 1.16588C6.45591 1.39737 6.54787 1.61937 6.71155 1.78306C6.87524 1.94674 7.09724 2.0387 7.32873 2.0387L15.0867 2.03747L0.548332 16.5759C0.384852 16.7394 0.293011 16.9611 0.293011 17.1923C0.293011 17.4235 0.384852 17.6452 0.548332 17.8087Z" fill="white"/>
+                    </svg>
+      section.home__projects__wrapper
+        h2.home__projects__title(data-animation='wonder')="Selected works."
+        .home__projects__list__wrapper
+          .home__projects__project__wrapper
+            figure.home__projects__project__media(data-speed="-3")
+              img.home__projects__project__media__img(src='/assets/projectMin.webp' alt='project image')
+              .home__projects__project__name
+                p.home__projects__project__name__text="Project 01"
+              .home__projects__project__arrowlink
+                figure.home__projects__project__icon
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.548332 17.8087C0.711811 17.9722 0.933537 18.064 1.16473 18.064C1.39593 18.064 1.61765 17.9722 1.78113 17.8087L16.3195 3.27027L16.3183 11.0283C16.3183 11.2598 16.4103 11.4818 16.574 11.6455C16.7376 11.8091 16.9596 11.9011 17.1911 11.9011C17.4226 11.9011 17.6446 11.8091 17.8083 11.6455C17.972 11.4818 18.064 11.2598 18.064 11.0283L18.064 1.16588C18.0641 1.05122 18.0416 0.937655 17.9978 0.831694C17.954 0.725733 17.8897 0.629456 17.8086 0.548378C17.7276 0.4673 17.6313 0.403015 17.5253 0.359203C17.4194 0.315391 17.3058 0.292913 17.1911 0.293058L7.32873 0.293057C7.21411 0.293057 7.10061 0.315634 6.99472 0.359497C6.88882 0.40336 6.7926 0.467652 6.71155 0.548701C6.54787 0.712387 6.45591 0.934393 6.45591 1.16588C6.45591 1.39737 6.54787 1.61937 6.71155 1.78306C6.87524 1.94674 7.09724 2.0387 7.32873 2.0387L15.0867 2.03747L0.548332 16.5759C0.384852 16.7394 0.293011 16.9611 0.293011 17.1923C0.293011 17.4235 0.384852 17.6452 0.548332 17.8087Z" fill="white"/>
+                  </svg>
+                  
+            figure.home__projects__project__media(data-speed="-6")
+              img.home__projects__project__media__img(src='/assets/projectMin.webp' alt='project image')
+              .home__projects__project__name
+                p.home__projects__project__name__text="Project 02"
+              .home__projects__project__arrowlink
+                figure.home__projects__project__icon
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.548332 17.8087C0.711811 17.9722 0.933537 18.064 1.16473 18.064C1.39593 18.064 1.61765 17.9722 1.78113 17.8087L16.3195 3.27027L16.3183 11.0283C16.3183 11.2598 16.4103 11.4818 16.574 11.6455C16.7376 11.8091 16.9596 11.9011 17.1911 11.9011C17.4226 11.9011 17.6446 11.8091 17.8083 11.6455C17.972 11.4818 18.064 11.2598 18.064 11.0283L18.064 1.16588C18.0641 1.05122 18.0416 0.937655 17.9978 0.831694C17.954 0.725733 17.8897 0.629456 17.8086 0.548378C17.7276 0.4673 17.6313 0.403015 17.5253 0.359203C17.4194 0.315391 17.3058 0.292913 17.1911 0.293058L7.32873 0.293057C7.21411 0.293057 7.10061 0.315634 6.99472 0.359497C6.88882 0.40336 6.7926 0.467652 6.71155 0.548701C6.54787 0.712387 6.45591 0.934393 6.45591 1.16588C6.45591 1.39737 6.54787 1.61937 6.71155 1.78306C6.87524 1.94674 7.09724 2.0387 7.32873 2.0387L15.0867 2.03747L0.548332 16.5759C0.384852 16.7394 0.293011 16.9611 0.293011 17.1923C0.293011 17.4235 0.384852 17.6452 0.548332 17.8087Z" fill="white"/>
+                  </svg>
+
+            figure.home__projects__project__media(data-speed="-7")
+              img.home__projects__project__media__img(src='../../assets/projectMin.webp' alt='project image')
+              .home__projects__project__name
+                p.home__projects__project__name__text="Project 03"
+              .home__projects__project__arrowlink
+                figure.home__projects__project__icon
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.548332 17.8087C0.711811 17.9722 0.933537 18.064 1.16473 18.064C1.39593 18.064 1.61765 17.9722 1.78113 17.8087L16.3195 3.27027L16.3183 11.0283C16.3183 11.2598 16.4103 11.4818 16.574 11.6455C16.7376 11.8091 16.9596 11.9011 17.1911 11.9011C17.4226 11.9011 17.6446 11.8091 17.8083 11.6455C17.972 11.4818 18.064 11.2598 18.064 11.0283L18.064 1.16588C18.0641 1.05122 18.0416 0.937655 17.9978 0.831694C17.954 0.725733 17.8897 0.629456 17.8086 0.548378C17.7276 0.4673 17.6313 0.403015 17.5253 0.359203C17.4194 0.315391 17.3058 0.292913 17.1911 0.293058L7.32873 0.293057C7.21411 0.293057 7.10061 0.315634 6.99472 0.359497C6.88882 0.40336 6.7926 0.467652 6.71155 0.548701C6.54787 0.712387 6.45591 0.934393 6.45591 1.16588C6.45591 1.39737 6.54787 1.61937 6.71155 1.78306C6.87524 1.94674 7.09724 2.0387 7.32873 2.0387L15.0867 2.03747L0.548332 16.5759C0.384852 16.7394 0.293011 16.9611 0.293011 17.1923C0.293011 17.4235 0.384852 17.6452 0.548332 17.8087Z" fill="white"/>
+                  </svg>
+
+            figure.home__projects__project__media(data-speed="-4")
+              img.home__projects__project__media__img(src='/assets/projectMin.webp' alt='project image')
+              .home__projects__project__name
+                p.home__projects__project__name__text="Project 04"
+              .home__projects__project__arrowlink
+                figure.home__projects__project__icon
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.548332 17.8087C0.711811 17.9722 0.933537 18.064 1.16473 18.064C1.39593 18.064 1.61765 17.9722 1.78113 17.8087L16.3195 3.27027L16.3183 11.0283C16.3183 11.2598 16.4103 11.4818 16.574 11.6455C16.7376 11.8091 16.9596 11.9011 17.1911 11.9011C17.4226 11.9011 17.6446 11.8091 17.8083 11.6455C17.972 11.4818 18.064 11.2598 18.064 11.0283L18.064 1.16588C18.0641 1.05122 18.0416 0.937655 17.9978 0.831694C17.954 0.725733 17.8897 0.629456 17.8086 0.548378C17.7276 0.4673 17.6313 0.403015 17.5253 0.359203C17.4194 0.315391 17.3058 0.292913 17.1911 0.293058L7.32873 0.293057C7.21411 0.293057 7.10061 0.315634 6.99472 0.359497C6.88882 0.40336 6.7926 0.467652 6.71155 0.548701C6.54787 0.712387 6.45591 0.934393 6.45591 1.16588C6.45591 1.39737 6.54787 1.61937 6.71155 1.78306C6.87524 1.94674 7.09724 2.0387 7.32873 2.0387L15.0867 2.03747L0.548332 16.5759C0.384852 16.7394 0.293011 16.9611 0.293011 17.1923C0.293011 17.4235 0.384852 17.6452 0.548332 17.8087Z" fill="white"/>
+                  </svg>
+
+                      //- include ../partials/footer
