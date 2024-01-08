@@ -1,5 +1,5 @@
 {
-  "name": "z.lebzar",
+  "name": "refine-test",
   "version": "1.0.0",
   "scripts": {
     "backend:build": "node app.js",
